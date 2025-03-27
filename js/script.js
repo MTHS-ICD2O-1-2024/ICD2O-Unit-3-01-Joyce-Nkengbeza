@@ -8,16 +8,15 @@
 
 function calculatesalary() {
   // input
-  const hoursworked = parseFloat(document.getElementById('hours-worked').value);
-  const hourlywage = parseFloat(document.getElementById('hourly-wage').value);
+  const abase = parseFloat(document.getElementById('a-base').value);
+  const bbase = parseFloat(document.getElementById('b-base').value);
+  const height = parseFloat(document.getElementById('height-lenghth').value);
     
 
   // process
-    const salaryweekly = (hoursworked * hourlywage) * (1.00 - 0.18)
-    const incometax = (hoursworked * hourlywage) * 0.18
+    const trapezoidarea = [(abase + bbase) / 2] * height
 
   // output
-  document.getElementById('salary').innerHTML = 'Your pay will be: $' +  salaryweekly.toFixed(2)
-  document.getElementById('incometax').innerHTML = 'The Government will take: $' + incometax.toFixed(2)
+  document.getElementById('area').innerHTML = 'area is:' + trapezoidarea + 'mm²'
 }
 
