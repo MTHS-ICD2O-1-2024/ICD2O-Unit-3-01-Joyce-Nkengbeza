@@ -6,7 +6,7 @@
 
 "use strict"
 
-function calculatesalary() {
+function calculatearea() {
   // input
   const abase = parseFloat(document.getElementById('a-base').value);
   const bbase = parseFloat(document.getElementById('b-base').value);
