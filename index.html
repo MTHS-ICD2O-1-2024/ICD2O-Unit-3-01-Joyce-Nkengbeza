@@ -4,7 +4,7 @@
 
 <head>
   <meta charset="utf-8" />
-  <meta name="description" content="Area Of Triangle With JS" />
+  <meta name="description" content="Area Of Trapezoid With JS" />
   <meta name="keywords" content="mths, icd2o" />
   <meta name="author" content="Joyce Nkengbeza" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -15,7 +15,7 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32new.png" />
   <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16new.png" />
   <link rel="manifest" href="./site.webmanifest" />
-  <title>Salary in JS</title>
+  <title>Area of Trapezoid in JS</title>
 </head>
 
 <body>
@@ -24,42 +24,51 @@
   <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
     <header class="mdl-layout__header">
       <div class="mdl-layout__header-row">
-        <span class="mdl-layout-title">Salary in JS</span>
+        <span class="mdl-layout-title">Area of Trapezoid in JS</span>
       </div>
     </header>
     <main class="mdl-layout__content">
-      <div class="page-content">Salary in JS</div>
+      <div class="page-content">Area of Trapezoid in JS</div>
       <img src="./images/incometax.jpg" />
-      <div class="page-content">Please enter the following:</div>
+      <h1>Formula</h1>
+      <div class="page-content">A = [(a + b) / 2] x h</div>
+      <div class="page-content">Please enter integers for dimensions</div>
       <br />
       <form>
         <!-- Numeric Textfield -->
-        <p>Hours Worked</p>
+        <p>A Base:</p>
         <div class="mdl-textfield mdl-js-textfield">
-          <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="hours-worked" />
-          <label class="mdl-textfield__label" for="hours-worked">Hours Worked...</label>
+          <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="a-base" />
+          <p>mm</p>
           <!-- class "mdl-textfield__error" -->
           <span class="mdl-textfield__error">Input is not a number!</span>
         </div>
         <!-- Numeric Textfield -->
-        <p>Hourly Wage</p>
+        <p>B Base:</p>
         <div class="mdl-textfield mdl-js-textfield">
-          <input class="mdl-textfield__input" type="text" id="hourly-wage" />
-          <label class="mdl-textfield__label" for="hourly-wage">Hourly Wage...</label>
+          <input class="mdl-textfield__input" type="text" id="b-base" />
+          <p>mm</p>
+          <!-- class "mdl-textfield__error" -->
+          <span class="mdl-textfield__error">Input is not a number!</span>
+        </div>
+        <!-- Numeric Textfield -->
+        <p>Height:</p>
+        <div class="mdl-textfield mdl-js-textfield">
+          <input class="mdl-textfield__input" type="text" id="height-length" />
+          <p>mm</p>
           <!-- class "mdl-textfield__error" -->
           <span class="mdl-textfield__error">Input is not a number!</span>
         </div>
         <br />
         <!-- Raised button with ripple -->
         <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"
-          onclick="calculatesalary()" type="button">
+          onclick="calculatearea()" type="button">
           Calculate
         </button>
       </form>
       <br />
       <div class="page-content-answer">
-        <div id="salary"></div>
-        <div id="incometax"></div>
+        <div id="area"></div>
       </div>
     </main>
   </div>
