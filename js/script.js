@@ -10,7 +10,7 @@ function calculatearea() {
   // input
   const abase = parseInt(document.getElementById('a-base').value);
   const bbase = parseInt(document.getElementById('b-base').value);
-  const height = parseInt(document.getElementById('height-lenghth').value);
+  const height = parseInt(document.getElementById('height-length').value);
     
 
   // process
