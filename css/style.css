@@ -32,3 +32,10 @@ img {
   float: right;
   height: 200px;
 }
+
+.mdl-textfield-container {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  /* Space between input field and "mm" */
+}
