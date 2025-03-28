@@ -33,7 +33,7 @@ img {
   height: 200px;
 }
 
-.mdl-textfield-container {
+.mdl-textfield {
   display: flex;
   align-items: center;
   gap: 5px;
